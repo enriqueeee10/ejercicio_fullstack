@@ -6,7 +6,7 @@ import type {
   Tag,
 } from "../types/Note";
 
-const API_URL = "http://localhost:3001/notes"; // URL de tu backend
+const API_URL = import.meta.env.VITE_API_URL + "/notes"; // URL de tu backend
 
 export const notesApi = {
   async getAllNotes(
